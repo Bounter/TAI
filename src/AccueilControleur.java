@@ -36,8 +36,21 @@ public class AccueilControleur extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+		
+		String message = "";
+		
+		UtilisateurDAOModele utilisateurDAO = new UtilisateurDAOModele();		
+		
 		String login = request.getParameter("login");
 		String password = request.getParameter("password");
+		
+		
+		if (utilisateurDAO.verifier(login, password)==-1) {
+			message = "Utilisateur non trouvé";
+		}
+		else {
+			message="Connexion...";
+		}
 	}
 
 }
