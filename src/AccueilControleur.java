@@ -71,9 +71,6 @@ public class AccueilControleur extends HttpServlet {
 				System.out.println("Tu es un responsable");
 				
 			}
-			else {
-				System.out.println("IL Y A UNE ERREUR !!!!");
-			}
 		}
 	}
 
