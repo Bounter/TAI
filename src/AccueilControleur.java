@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/AccueilControleur")
 public class AccueilControleur extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	public String message = "";
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -37,19 +38,42 @@ public class AccueilControleur extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		
-		String message = "";
+		UtilisateurDAOModele utilisateurDAO = new UtilisateurDAOModele();	
 		
-		UtilisateurDAOModele utilisateurDAO = new UtilisateurDAOModele();		
 		
 		String login = request.getParameter("login");
 		String password = request.getParameter("password");
-		
-		
-		if (utilisateurDAO.verifier(login, password)==-1) {
-			message = "Utilisateur non trouvé";
+		int id = utilisateurDAO.verifier(login, password);
+		 
+		if (id==-1) {
+			System.out.println("Utilisateur non trouvé");
 		}
 		else {
-			message="Connexion...";
+			System.out.println("Connexion...");
+			UtilisateurBeanModele utilisateur = utilisateurDAO.lire(id);
+			if (utilisateur.getPoste().equals("operateur")) {
+				
+				System.out.println("Tu es un opérateur");
+							
+			}
+			else if (utilisateur.getPoste().equals("controleur financier")) {
+				
+				System.out.println("Tu es un controleur financier");
+				
+			}
+			else if (utilisateur.getPoste().equals("technicien de maintenance")) {
+				
+				System.out.println("Tu es un technicien de maintenance");
+				
+			}
+			else if (utilisateur.getPoste().equals("responsable")) {
+				
+				System.out.println("Tu es un responsable");
+				
+			}
+			else {
+				System.out.println("IL Y A UNE ERREUR !!!!");
+			}
 		}
 	}
 

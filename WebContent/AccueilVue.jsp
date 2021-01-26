@@ -13,6 +13,7 @@
 		Password : <input type="text" name="password" /> <br />
 		<input type="submit" />
 	</form>
-	${message}
+	<!-- Partie qui ne fonctionne pas, je dois trouver l'erreur -->
+	<p>${message}</p>
 </body>
 </html>
