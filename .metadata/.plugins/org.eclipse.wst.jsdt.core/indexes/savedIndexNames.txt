@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\m.okoniewski\Documents\GitHub\TAI\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2837894435.index
+2373976679.index
+759721498.index
+2810638233.index
+1003691658.index
