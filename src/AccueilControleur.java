@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class AccueilControleur
@@ -27,7 +28,7 @@ public class AccueilControleur extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+
 		request.getRequestDispatcher("/AccueilVue.jsp").forward(request, response);
 
 	}
@@ -48,28 +49,33 @@ public class AccueilControleur extends HttpServlet {
 
 		if (id==-1) {
 			message = "Utilisatrice non trouvé";
-			//Devrait fonctionner mais je ne sais pas pourquoi ca ne veut pas
+
 			request.setAttribute("message", message);
 		}
 		else {
 			UtilisateurBeanModele utilisateur = utilisateurDAO.lire(id);
+			
+			HttpSession session = request.getSession();
+			
+			session.setAttribute("utilisateur", utilisateur);
+			
 			if (utilisateur.getPoste().equals("operateur")) {
 
 				response.sendRedirect("PointageVue.jsp");		
 
 			}
 			else if (utilisateur.getPoste().equals("controleur financier")) {
-				
+
 				response.sendRedirect("PerformancesActuellesVue.jsp");
 
 			}
 			else if (utilisateur.getPoste().equals("technicien de maintenance")) {
-				
+
 				response.sendRedirect("PlanningMaintenanceVue.jsp");
 
 			}
 			else if (utilisateur.getPoste().equals("responsable")) {
-				
+
 				response.sendRedirect("PerformancesVue.jsp");
 
 			}
