@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\m.okoniewski\Desktop\TAI\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1935188475.index
+4005981462.index
+3761158063.index
+3911548222.index
+759721498.index
