@@ -1,0 +1,23 @@
+INDEX VERSION 1.130+C:\Users\m.okoniewski\Desktop\TAI\.metadata\.plugins\org.eclipse.jdt.core
+379664343.index
+2975910402.index
+753608048.index
+3246166547.index
+364096953.index
+2060039664.index
+3384131066.index
+2772419465.index
+54359651.index
+3973945260.index
+759721498.index
+1459523266.index
+3429681154.index
+4069293921.index
+3572716771.index
+646436966.index
+2755271588.index
+165794779.index
+2845807539.index
+4120324546.index
+1151569180.index
+1057511984.index

@@ -6,8 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Pointage</title>
 </head>
+
 <body>
 
-	<p>${utilisateur.id }</p>
+	<button type="button" id="bouton" onclick="start(this)">click
+	</button>
+
+	<div id="bip"></div>
 </body>
 </html>

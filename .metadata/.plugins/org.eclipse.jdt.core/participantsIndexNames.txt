@@ -1,0 +1,3 @@
+INDEX VERSION 1.130
+C:\Users\m.okoniewski\Desktop\TAI\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4002129996.index
+\TAI\src
