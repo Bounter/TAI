@@ -1,0 +1,7 @@
+127.0.0.1 - - [28/Jan/2021:10:43:39 +0100] "GET / HTTP/1.1" 404 996
+0:0:0:0:0:0:0:1 - - [28/Jan/2021:10:43:41 +0100] "GET /TAI/AccueilControleur HTTP/1.1" 200 543
+0:0:0:0:0:0:0:1 - - [28/Jan/2021:10:43:52 +0100] "POST /TAI/AccueilControleur HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [28/Jan/2021:10:43:53 +0100] "GET /TAI/PointageVue.jsp HTTP/1.1" 200 802
+0:0:0:0:0:0:0:1 - - [28/Jan/2021:11:10:02 +0100] "GET /TAI/AccueilControleur HTTP/1.1" 200 543
+0:0:0:0:0:0:0:1 - - [28/Jan/2021:11:10:26 +0100] "POST /TAI/AccueilControleur HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [28/Jan/2021:11:10:26 +0100] "GET /TAI/PointageVue.jsp HTTP/1.1" 200 802

@@ -1,0 +1,4 @@
+1611685754013	Move files
+1611685816321	Move 5 resources to 'WebContent'
+1611685834968	Move 'web.xml' to 'WEB-INF'
+1611750283078	Move 'mysql-connector-java-5.1.40-bin.jar' to 'lib'

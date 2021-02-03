@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\Users\t.mureddu\Desktop\POO\TAI\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+759721498.index

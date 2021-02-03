@@ -1,0 +1,11 @@
+INDEX VERSION 1.130
+C:\Users\t.mureddu\Desktop\POO\TAI\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4002129996.index
+\TAI\src
+C:\Users\t.mureddu\Desktop\POO\TAI\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3978271532.index
+\Projet_TAI\src
+C:\Users\t.mureddu\Desktop\POO\TAI\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\873144636.index
+\ProjetStopCovid\src
+C:\Users\t.mureddu\Desktop\POO\TAI\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3954182252.index
+\TAI\src
+C:\Users\t.mureddu\Desktop\POO\TAI\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\742953114.index
+\MVC-TP4-relation-1-n\src

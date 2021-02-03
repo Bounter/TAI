@@ -1,0 +1,16 @@
+import java.time.LocalDateTime;
+
+/**
+ * 
+ * @author t.mureddu
+ *
+ */
+public class DonneesBeanModele {
+	
+	public LocalDate date;
+	public float hTravail;
+	public int objectifPero;
+	public int nbrOF;
+	public LocalDateTime
+
+}

@@ -1,0 +1,3 @@
+127.0.0.1 - - [29/Jan/2021:10:48:40 +0100] "GET / HTTP/1.1" 404 996
+0:0:0:0:0:0:0:1 - - [29/Jan/2021:10:48:44 +0100] "GET /ProjetStopCovid/ HTTP/1.1" 200 637
+0:0:0:0:0:0:0:1 - - [29/Jan/2021:10:49:00 +0100] "POST /ProjetStopCovid/MenuControleur HTTP/1.1" 200 637

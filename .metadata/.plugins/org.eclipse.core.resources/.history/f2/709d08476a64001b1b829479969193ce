@@ -1,0 +1,66 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+/**
+ * 
+ * @author t.mureddu
+ *
+ */
+public class DonneesBeanModele {
+	
+	public LocalDate date;
+	public float hTravail;
+	public int objectifPero;
+	public int nbrOF;
+	public LocalDateTime pointageArrivee;
+	public LocalDateTime pointageDepart;
+	
+	
+	public LocalDate getDate() {
+		return date;
+	}
+	
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+	
+	public float gethTravail() {
+		return hTravail;
+	}
+	
+	public void sethTravail(float hTravail) {
+		this.hTravail = hTravail;
+	}
+	
+	public int getObjectifPero() {
+		return objectifPero;
+	}
+	
+	public void setObjectifPero(int objectifPero) {
+		this.objectifPero = objectifPero;
+	}
+	
+	public int getNbrOF() {
+		return nbrOF;
+	}
+	
+	public void setNbrOF(int nbrOF) {
+		this.nbrOF = nbrOF;
+	}
+	
+	public LocalDateTime getPointageArrivee() {
+		return pointageArrivee;
+	}
+	
+	public void setPointageArrivee(LocalDateTime pointageArrivee) {
+		this.pointageArrivee = pointageArrivee;
+	}
+	
+	public LocalDateTime getPointageDepart() {
+		return pointageDepart;
+	}
+	
+	public void setPointageDepart(LocalDateTime pointageDepart) {
+		this.pointageDepart = pointageDepart;
+	}
+}
