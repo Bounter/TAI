@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -21,6 +21,9 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
 	integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
 	crossorigin="anonymous"></script>
+
+
+
 <title>Performances Actuelles</title>
 </head>
 <body>
@@ -31,9 +34,10 @@
 			class="btn btn-outline-primary" for="btnradio1">Pointage</label> <input
 			type="radio" class="btn-check" name="btnradio" id="btnradio2"
 			autocomplete="off"> <label class="btn btn-outline-primary"
-			for="btnradio2">Performances Actuelles</label> <input type="radio" class="btn-check"
-			name="btnradio" id="btnradio3" autocomplete="off"> <label
-			class="btn btn-outline-primary" for="btnradio3">Etat machine</label>
+			for="btnradio2">Performances Actuelles</label> <input type="radio"
+			class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+		<label class="btn btn-outline-primary" for="btnradio3">Etat
+			machine</label>
 	</div>
 
 	<table class="table align-middle">
@@ -54,21 +58,19 @@
 				<th scope="col">Performance</th>
 
 			</tr>
-			<c:forEach items="${utilisateur.Liste}" var="utilisateur">
-				<tr>
 
-					<td><c:out value="${donneestravail.date }"/></td>
-					<td><c:out value="${utilisateur.donneestravail.objectifPeso}"/></td>
-					<td><c:out value="${utilisateur.donneestravail.hTravail}"/></td>
-					<td><c:out value="${utilisateur.donneestravail.nbrOF}" /></td>
-					<td><c:out value="${utilisateur.donneestravail.performance}"/></td>
-				</tr>
-			</c:forEach>
+			<td><c:out value="${utilisateur.donneestravail.date }" /></td>
+			<td><c:out value="${utilisateur.donneestravail.objectifPeso}" /></td>
+			<td><c:out value="${utilisateur.donneestravail.hTravail}" /></td>
+			<td><c:out value="${utilisateur.donneestravail.nbrOF}" /></td>
+			<td><c:out value="${utilisateur.donneestravail.performance}" /></td>
+			</tr>
+
 		</tbody>
 
 
 	</table>
-	<table>
-	
+
+
 </body>
 </html>
